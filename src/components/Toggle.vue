@@ -1,12 +1,12 @@
 <template >
-    <div class="flex items-center justify-end w-full px-2 py-2">
+    <div  class="flex items-center justify-end w-full px-2 py-2">
   
   <label for="toggleB" class="flex items-center cursor-pointer">
       <span class="text-white text-2xl mr-1">ES</span>
     <!-- toggle -->
-    <div class="relative">
+    <div @click="triggerEventLanguaje" class="relative">
       <!-- input -->
-      <input type="checkbox" id="toggleB" class="sr-only">
+      <input v-model="value"  type="checkbox" id="toggleB" class="sr-only">
       <!-- line -->
       <div class="block bg-white w-14 h-8 rounded-full"></div>
       <!-- dot -->
@@ -19,7 +19,18 @@
 </div>
 </template>
 <script>
-
+  export default {
+    data(){
+      return {
+        value: ""
+      }
+    },
+    method:{
+      triggerEventLanguaje(){
+        console.log("asd")
+      }
+    }
+  }
 </script>
 <style >
     .dot {
