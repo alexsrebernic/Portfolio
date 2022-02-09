@@ -31,7 +31,7 @@
             <AboutMe :isInEnglish="isInEnglish"/>
             </div>
             <div v-bind:class="{'hidden': openTab !== 2, 'flex items-center justify-center': openTab === 2}">
-           <Projects/>
+           <Projects :isInEnglish="isInEnglish"/>
             </div>
             <div v-bind:class="{'hidden': openTab !== 3, 'flex items-center justify-center': openTab === 3}">
            
