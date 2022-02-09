@@ -4,9 +4,9 @@
   <label for="toggleB" class="flex items-center cursor-pointer">
       <span class="text-white text-2xl mr-1">ES</span>
     <!-- toggle -->
-    <div @click="triggerEventLanguaje" class="relative">
+    <div  class="relative">
       <!-- input -->
-      <input v-model="value"  type="checkbox" id="toggleB" class="sr-only">
+      <input @click="triggerEventLanguaje" value="true"  type="checkbox" id="toggleB" class="sr-only">
       <!-- line -->
       <div class="block bg-white w-14 h-8 rounded-full"></div>
       <!-- dot -->
@@ -25,10 +25,10 @@
         value: ""
       }
     },
-    method:{
-      triggerEventLanguaje(){
-        console.log("asd")
-      }
+    methods:{
+      triggerEventLanguaje(e){
+        this.$emit('toggle-languaje')
+}
     }
   }
 </script>

@@ -2,11 +2,11 @@
 <template>
     <header class="w-full 2xl:w-4/5  ">
         <div class="hero shadow-xl css-selector flex justify-end items-start 2xl:rounded-b-md">
-            <Toggle @toggle-languaje="toggleLanguaje"/>
+            <Toggle @toggle-languaje="triggerEventLanguaje"/>
         </div>
         <div class="flex flex-col items-center">
-            <div class=" rounded-full w-52 h-52 bg-white xl absolute image-header flex items-center justify-center">
-                <img class="rounded-full shadow-md w-48 h-48 object-left" src="../assets/Screenshot from 2022-02-07 17-25-08.png" alt="">
+            <div class=" rounded-full w-52 h-52 bg-white  absolute image-header flex items-center justify-center">
+                <img class="rounded-full shadow-xl w-48 h-48 object-left" src="../assets/Screenshot from 2022-02-07 17-25-08.png" alt="">
             </div>
           
         </div>
@@ -14,7 +14,7 @@
           <div class="inline-flex items-center justify-center flex-col mt-28 border-b pb-2 px-6">
                 <div>
                 <h1 class="text-5xl truncate font-sm text-center">Alex Srebernic</h1>
-                <h1 class="text-xl truncate font-semibold mt-3 text-center">Full-stack web developer</h1>
+                <h1  class="text-xl truncate font-semibold mt-3 text-center text-gray-500">{{isInEnglish?"Full-stack web developer":"Desarrollador web Full-stack"}}</h1>
                 </div>
             </div>
         </div>
@@ -27,20 +27,15 @@ export default {
     data(){
         return{
             isInEnglish:false,
-            isInSpanish:true
         }
     },
+    props: {
+        isInEnglish:Boolean
+    },
     methods:{
-        toggleLanguaje(){
-            if(this.isInSpanish){
-                this.isInSpanish = false
-                this.isInEnglish = true
-            } else if(this.isInEnglish){
-                this.isInEnglish = false
-                this.isInSpanish = true
-            }
-            console.log(this.isInEnglish,this.isInSpanish)
-        }
+         triggerEventLanguaje(e){
+        this.$emit('toggle-languaje')
+}
     },
     components: {
         Toggle
