@@ -1,5 +1,5 @@
 <template >
-    <div  class="flex items-center justify-end w-full px-2 py-2">
+    <div  class="flex items-center justify-end  px-2 py-2">
   
   <label for="toggleB" class="flex items-center cursor-pointer">
       <span class="text-white text-2xl mr-1">ES</span>

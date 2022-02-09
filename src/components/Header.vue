@@ -2,6 +2,7 @@
 <template>
     <header class="w-full 2xl:w-4/5  ">
         <div class="hero shadow-xl css-selector flex justify-end items-start 2xl:rounded-b-md">
+            <Icon icon="bytesize:moon" />
             <Toggle @toggle-languaje="triggerEventLanguaje"/>
         </div>
         <div class="flex flex-col items-center">
@@ -38,9 +39,13 @@ export default {
 }
     },
     components: {
-        Toggle
+        Toggle,
+        Icon,
+
     }
 }
+import { Icon } from '@iconify/vue';
+
 </script>
 <style >
     @import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap');    

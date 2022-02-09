@@ -1,5 +1,5 @@
 <template>
-  <div class="">
+  <div class="w-full">
     <div class="w-full">
         <div class="flex justify-center items-center">
       <ul class="flex  list-none  pt-3 pb-4 m-0 items-center justify-center w-4/5">
@@ -28,13 +28,13 @@
         <div class="px-4 py-5 ">
           <div class="">
             <div v-bind:class="{'hidden': openTab !== 1, 'flex items-center justify-center': openTab === 1}">
-            <AboutMe :isInEnglish="isInEnglish"/>
+              <AboutMe :isInEnglish="isInEnglish"/>
             </div>
             <div v-bind:class="{'hidden': openTab !== 2, 'flex items-center justify-center': openTab === 2}">
-           <Projects :isInEnglish="isInEnglish"/>
+              <Projects :isInEnglish="isInEnglish"/>
             </div>
             <div v-bind:class="{'hidden': openTab !== 3, 'flex items-center justify-center': openTab === 3}">
-           
+              <ContactMe :isInEnglish="isInEnglish"/>
             </div>
           </div>
         </div>
@@ -62,12 +62,12 @@ export default {
     },
   
    
-    components: { AboutMe, Projects }
+    components: { AboutMe, Projects, ContactMe }
 }
 import { toRefs } from "vue";
 import AboutMe from "./AboutMe.vue"
-import ProjectsVue from "./Projects.vue";
 import Projects from "./Projects.vue";
+import ContactMe from './ContactMe.vue'
 </script>
 <style >
     @import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap');    
