@@ -32,7 +32,7 @@
                 Todo este conocimiento lo e adquirido por internet,gracias a los excelentes recursos proveidos  por cursos web como <a class="cursor-pointer underline text-blue-600" href="https://www.theodinproject.com/">The odin project</a> , <a class="cursor-pointer underline text-blue-600" href="https://www.freecodecamp.org/">Freecodecamp</a>,<a class="cursor-pointer underline text-blue-600" href="https://platzi.com/">Platzi</a> y Harvard's CS50. En ellos aprendi los fundamentos y bases de la web.
             </p> 
             <p class="text-about dark:text-gray-300">
-                  Me considero una persona altamente <span class="font-bold">disciplinada</span> y detallista  , capaz de adaptarse y aprender cualquier tecnologia. Disfruto de aprender , crear y  colaborar con personas en proyectos, aparte de la programacion tambien me gusta practicar calistenia, leer libros y la naturaleza.
+                  Me considero una persona altamente <span class="font-bold">disciplinada</span>, capaz de adaptarse y aprender cualquier tecnologia. Disfruto de aprender , crear y  colaborar con personas en proyectos, aparte de la programacion tambien me gusta practicar calistenia, leer libros y la naturaleza.
             </p>
           <h1 class="title-about-me text-3xl my-6 font-semibold dark:text-gray-300">Actualidad</h1>
             <p class="dark:text-gray-300">

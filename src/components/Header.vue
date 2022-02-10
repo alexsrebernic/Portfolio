@@ -8,7 +8,7 @@
         </div>
         <div class="flex flex-col items-center">
             <div class=" rounded-full dark:bg-gray-700 w-52 h-52 bg-white  absolute image-header flex items-center justify-center">
-                <img class="rounded-full shadow-xl w-48 h-48 object-left" src="../assets/Screenshot from 2022-02-07 17-25-08.png" alt="">
+                <img class="rounded-full shadow-xl w-48 h-48 object-left" src="/assets/photome.png" alt="">
             </div>
           
         </div>
