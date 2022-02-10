@@ -16,10 +16,10 @@
                             </div>
                             <a :href="project.pageUrl" class="text-xs text-blue-500 break-all">{{project.pageUrl}}</a>
                         </div>
-                        <p v-if="isInEnglish">
+                        <p v-if="isInEnglish" class="dark:text-gray-200">
                             {{project.detailsEnglish}}
                         </p>
-                        <p v-else>  
+                        <p v-else class="dark:text-gray-200">  
                             {{project.detailsSpanish}}
                         </p>
                         
@@ -87,8 +87,8 @@ export default {
                     image:"src/assets/projectsImages/todo-list.png",
                     gif:"src/assets/projectsGifs/to-do.gif",
                     githubRepository:"https://github.com/alexsrebernic/TodoList_TOP",
-                    detailsEnglish:"Manage your to-dos and projects with an interactive movement of task and creation of them. Is maded with vanilla Javascript and used the library Calendar.js,In the Github documentation there are the steps to start it locally and the stack used",
-                    detailsSpanish:"Administra tus tareas y proyectos con una interactivo movimiento de tareas y creacion de ellas. Fue hecho con vanilla Javascript y se utilizo Calendar.js. En la documentacion de Github estan los pasos para iniciarlo localmente y el stack utilizado.",
+                    detailsEnglish:"Manage your to-dos and projects with an interactive movement of task and creation of them. Is maded with vanilla Javascript and used the library Calendar.js,In the Github documentation  you can find the stack used",
+                    detailsSpanish:"Administra tus tareas y proyectos con una interactivo movimiento de tareas y creacion de ellas. Fue hecho con vanilla Javascript y se utilizo Calendar.js. En la documentacion de Github esta  el stack utilizado.",
                     pageUrl:"https://alexsrebernic.github.io/TodoList_TOP/"
                 },
                  {
@@ -98,8 +98,8 @@ export default {
                     image:"src/assets/projectsImages/etch-a-sketch.png",
                     gif:"src/assets/projectsGifs/etch-a-sketch.gif",
                     githubRepository:"https://github.com/alexsrebernic/ETCH_A_SKETCH_TOP",
-                    detailsEnglish:"Simple web aplication in which you can draw with colors in a frame with configurable extension,when you finish your drawing you can download in png format.In the Github documentation there are the steps to start it locally and the stack used",
-                    detailsSpanish:"Simple aplicacion web en la que podes dibujar con colores en un marco con extension configurable, al finalizar tu dibujo este se puede descargar en formato png. En la documentacion de Github estan los pasos para iniciarlo localmente y el stack utilizado.",
+                    detailsEnglish:"Simple web aplication in which you can draw with colors in a frame with configurable extension,when you finish your drawing you can download in png format.In the Github documentation  you can find the stack used",
+                    detailsSpanish:"Simple aplicacion web en la que podes dibujar con colores en un marco con extension configurable, al finalizar tu dibujo este se puede descargar en formato png. En la documentacion de Github el stack utilizado.",
                     pageUrl:"https://alexsrebernic.github.io/ETCH_A_SKETCH_TOP/"
                 },
                 {

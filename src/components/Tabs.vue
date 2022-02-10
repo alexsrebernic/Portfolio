@@ -1,22 +1,22 @@
 <template>
-  <div class="w-full">
+  <div class="w-full dark:bg-gray-700">
     <div class="w-full">
         <div class="flex justify-center items-center">
       <ul class="flex  list-none  pt-3 pb-4 m-0 items-center justify-center w-4/5">
       
         <li class=" px-4 text-center">
-          <span class=" one text-tabs truncate   py-3  cursor-pointer" v-on:click="toggleTabs(1)" v-bind:class="{ 'activespan': openTab === 1}">
+          <span class=" one text-tabs truncate   py-3  cursor-pointer dark:text-white" v-on:click="toggleTabs(1)" v-bind:class="{ 'activespan': openTab === 1}">
             {{isInEnglish?"About me":"Acerca de mi"}}
           </span>
         </li>
         <li class=" px-4 text-center">
-          <span class=" two text-tabs truncate   py-3   cursor-pointer" v-on:click="toggleTabs(2)" v-bind:class="{'activespan': openTab === 2}">
+          <span class=" two text-tabs truncate   py-3   cursor-pointer dark:text-white" v-on:click="toggleTabs(2)" v-bind:class="{'activespan': openTab === 2}">
           {{isInEnglish?"Projects":"Proyectos"}}
 
           </span>
         </li>
         <li class=" px-4 text-center">
-          <span class=" text-tabs three truncate    py-3   cursor-pointer" v-on:click="toggleTabs(3)" v-bind:class="{'activespan': openTab === 3}">
+          <span class=" text-tabs three truncate    py-3   cursor-pointer dark:text-white" v-on:click="toggleTabs(3)" v-bind:class="{'activespan': openTab === 3}">
             {{isInEnglish?"Contact me":"Contactame"}}
           </span>
 
@@ -25,8 +25,8 @@
 
       </div>
       <div class=" flex flex-col min-w-0  bg-white w-full  mt-8">
-        <div class="px-4 py-5 ">
-          <div class="">
+        <div class="px-4 py-5 dark:bg-gray-700">
+          <div class="dark:text-white">
             <div v-bind:class="{'hidden': openTab !== 1, 'flex items-center justify-center': openTab === 1}">
               <AboutMe :isInEnglish="isInEnglish"/>
             </div>

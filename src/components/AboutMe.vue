@@ -1,41 +1,41 @@
 <template >
-    <div class="text-lg lg:w-1/2  xl:w-2/6 md:w-3/4">
+    <div class="text-lg lg:w-1/2  xl:w-2/6 md:w-3/4 ">
       <div v-if="isInEnglish" class="about-me-element px-2 ">
                 <h1 class="title-about-me text-3xl mb-6 font-semibold">About me</h1>
-          <p class="text-about ">
+          <p class="text-about  dark:text-gray-300">
                 Welcome! My name is Alex Srebernic and i'm a and I am a self-taught web developer, i am currently 17 years old and i live in Neuquen, Argentina.   
           </p>
-          <p>
+          <p class="dark:text-gray-300">
                I started studying web development  {{dateInEnglish}} and during all this time I have learned  libraries and frameworks both frontend <span class="text-sm">(React,Vue)</span>  and  Backend <span class="text-sm">(Express,Rest API,Node.js,Web sockets,MongoDB,Firebase,etc)</span>. 
           </p>
-          <p class="text-about">
+          <p class="text-about dark:text-gray-300">
                 All this knowledge was acquired by the web,thanks to the excellent resources provided  by web courses like <a class="cursor-pointer underline text-blue-600" href="https://www.theodinproject.com/">The odin project</a> , <a class="cursor-pointer underline text-blue-600" href="https://www.freecodecamp.org/">Freecodecamp</a> and Harvard's CS50. In them i learned the fundamentals and basics of the internet.
               
             </p> 
-            <p class="text-about">
+            <p class="text-about dark:text-gray-300">
                   I consider myself a person highly  <span class="font-bold">disciplined</span> and retailed  , able to adapt and learn any technology. I enjoy learning, creating and collaborating with people on projects, apart from programming, I also like to practice calisthenics, read books and the nature.
             </p>
-          <h1 class="title-about-me text-3xl my-6 font-semibold">Present</h1>
-            <p>
+          <h1 class="title-about-me text-3xl my-6 font-semibold dark:text-gray-300">Present</h1>
+            <p class="dark:text-gray-300">
                 At the present time i'm working in the backend of a cryptocurrency courses page with Firebase, i keep studying and searching for a position for junior web developer where i can be part of a teamwork. In which i can continue to have a personal and professional growth.
             </p>
       </div>
       <div class="about-me-element px-2" v-else>
           <h1 class="title-about-me text-3xl mb-6 font-semibold">Acerca de mi</h1>
-          <p class="text-about">
+          <p class="text-about dark:text-gray-300">
                 ¡Bienvenido! Me llamo Alex Srebernic y soy un desarrollador web autodidacta,actualmente tengo 17 años y vivo en Neuquen, Argentina.   
           </p>
-          <p>
+          <p class="dark:text-gray-300">
                Empeze a estudiar desarrollo web hace mas de {{dateInSpanish}} y durante todo este tiempo e aprendido librerias y marcos de trabajo tanto Frontend <span class="text-sm">(React,Vue)</span>  como  Backend <span class="text-sm">(Express,Rest API,Node.js,Web sockets,MongoDB,Firebase,etc)</span>. 
           </p>
-          <p class="text-about">
+          <p class="text-about dark:text-gray-300">
                 Todo este conocimiento lo e adquirido por internet,gracias a los excelentes recursos proveidos  por cursos web como <a class="cursor-pointer underline text-blue-600" href="https://www.theodinproject.com/">The odin project</a> , <a class="cursor-pointer underline text-blue-600" href="https://www.freecodecamp.org/">Freecodecamp</a>,<a class="cursor-pointer underline text-blue-600" href="https://platzi.com/">Platzi</a> y Harvard's CS50. En ellos aprendi los fundamentos y bases de la web.
             </p> 
-            <p class="text-about">
+            <p class="text-about dark:text-gray-300">
                   Me considero una persona altamente <span class="font-bold">disciplinada</span> y detallista  , capaz de adaptarse y aprender cualquier tecnologia. Disfruto de aprender , crear y  colaborar con personas en proyectos, aparte de la programacion tambien me gusta practicar calistenia, leer libros y la naturaleza.
             </p>
-          <h1 class="title-about-me text-3xl my-6 font-semibold">Actualidad</h1>
-            <p>
+          <h1 class="title-about-me text-3xl my-6 font-semibold dark:text-gray-300">Actualidad</h1>
+            <p class="dark:text-gray-300">
                 A dia de hoy estoy trabajando con Firebase en el Backend de una pagina de cursos de criptomonedas, continuo estudiando y  buscando una posicion como desarrollador web junior en donde pueda ser parte de un equipo de trabajo. En el cual pueda seguir teniendo un crecimiento en lo personal y profesional.
             </p>
        </div>

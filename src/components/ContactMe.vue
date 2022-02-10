@@ -1,13 +1,13 @@
 <template >
     <div class="w-full lg:w-1/2  xl:w-1/3	 md:w-3/4">
-        <div class="flex justify-start items-center w-full border-b border-b-black py-2">
+        <div class="flex justify-start items-center w-full border-b border-b-black py-2 dark:border-b-white">
             <h1 class="title-contact text-2xl font-semibold">{{isInEnglish?"Let's get in touch":"Mantengámonos en contacto"}}</h1>
         </div>
         <div class="mt-3">
             <form action="https://formsubmit.co/alexsrebernic@gmail.com" method="POST" enctype=”multipart/form-data”>
-                <input required type="email" name="email" class="border-b py-3 w-full px-2" placeholder="Email">
-                <input required type="text" name="_subject" class="border-b py-3 w-full px-2" placeholder="Subject">
-                <textarea required name="message"  class="border-b w-full mt-3 px-2 py-2" id="" cols="30" rows="10" placeholder="Message"></textarea>
+                <input required type="email" name="email" class="border-b py-3 w-full px-2 dark:bg-gray-700" placeholder="Email">
+                <input required type="text" name="_subject" class="border-b py-3 w-full px-2 dark:bg-gray-700" placeholder="Subject">
+                <textarea required name="message"  class="border-b w-full mt-3 px-2 py-2 dark:bg-gray-700" id="" cols="30" rows="10" placeholder="Message"></textarea>
                 <button type="submit" class="border-2 mt-3 px-6 rounded py-2 text-gray-400 text-md">Send</button>
             </form>
         </div>
@@ -40,6 +40,9 @@
 </template>
 <script>
 export default {
+    data(){
+       
+    },
     props: {
         isInEnglish:Boolean
     },

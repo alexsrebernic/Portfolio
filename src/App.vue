@@ -5,7 +5,9 @@ import { ref } from '@vue/reactivity';
 import HeaderVue from './components/Header.vue';
 import Tabs from './components/Tabs.vue'
   let isInEnglish = ref(false)
+  
 
+ 
    function toggleLanguaje(){
             if(isInEnglish.value){
                 isInEnglish.value = false
@@ -16,10 +18,10 @@ import Tabs from './components/Tabs.vue'
         }
 </script>
 <template>
-<div class=" flex justify-start items-center flex-col">
+<div class=" flex justify-start items-center flex-col dark:bg-gray-700">
   <HeaderVue :isInEnglish="isInEnglish" @toggle-languaje="toggleLanguaje" />
   <Tabs :isInEnglish="isInEnglish"/>
-  <div class="flex items-start w-full">
+  <div class="flex items-start w-full dark:bg-gray-700">
     <span class="text-gray-400 text-md footer-text">Alex Srebernic 2022 ©</span>
   </div>
 </div>
